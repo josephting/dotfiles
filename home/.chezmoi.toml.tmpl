@@ -1,0 +1,6 @@
+{{- $personal := promptBoolOnce . "personal" "Is this personal machine" false -}}
+{{- $email := promptStringOnce . "email" "What is your email address" | quote -}}
+
+[data]
+    personal = {{ $personal }}
+    email = {{ $email }}

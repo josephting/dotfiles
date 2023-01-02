@@ -1,0 +1,20 @@
+[user]
+	name = Joseph Ting
+{{- if .email }}
+	email = {{ .email }}
+{{- else }}
+	email = josephting@users.noreply.github.com
+{{- end }}
+{{- if .personal }}
+	signingkey = {{ passhole "dotfiles/github-signingkey" "password" }}
+[commit]
+	gpgsign = true
+{{- end }}
+[core]
+	editor = nvim
+[gpg]
+	program = gpg
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
