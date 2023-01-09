@@ -1,3 +1,6 @@
+# Initialize GPG
+export GPG_TTY=$(tty)
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -85,9 +88,6 @@ pastefinish() {
 }
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
-
-# Initialize GPG
-export GPG_TTY=$(tty)
 
 {{- if .personal }}
 alias gitlabsetup="git config user.email 51744-josephting@users.noreply.gitlab.com && git config user.signingkey {{ passhole "dotfiles/gitlab-signingkey" "password" }}"

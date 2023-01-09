@@ -4,14 +4,14 @@ command_exists() {
   command -v "$@" >/dev/null 2>&1
 }
 
-for dep in zsh curl git; do
+for dep in git; do
   if ! command_exists $dep; then
     echo "$dep not found. Please install $dep first."
     exit 127
   fi
 done
 
-cd "{{ .chezmoi.sourceDir }}/../scripts/shell"
+cd "{{ .chezmoi.sourceDir }}/../scripts/preload"
 
 for script in $(ls *.sh); do
   echo "Executing $script"

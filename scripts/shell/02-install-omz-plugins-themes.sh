@@ -4,7 +4,7 @@ ENDCOLOR="\e[0m"
 YELLOW="\e[33m"
 
 if [ -d "$HOME/.oh-my-zsh" ]; then
-  echo "${YELLOW}~/.oh-my-zsh folder already exists. Skipping..."
+  echo "${YELLOW}~/.oh-my-zsh folder already exists. Skipping...${ENDCOLOR}"
   exit 0
 fi
 
