@@ -1,7 +1,11 @@
-nodejs 19.0.1
-python 3.11.1
-poetry 1.2.2
-kubectl 1.25.2
-neovim 0.8.1
-peco 0.5.10
+nodejs lts
+python 3.11.6
+kubectl 1.28.3
+neovim 0.9.4
+peco 0.5.11
 age 1.1.1
+direnv 2.32.3
+ruby 3.2.0
+terraform 1.6.2
+helm 3.13.1
+minikube 1.31.2
