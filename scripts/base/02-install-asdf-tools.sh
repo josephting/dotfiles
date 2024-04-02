@@ -14,7 +14,7 @@ if ! command_exists asdf; then
   exit 127
 fi
 
-for plugin in age kubectl neovim nodejs peco python poetry; do
+for plugin in age neovim peco; do
   echo "${YELLOW}Installing $plugin...${ENDCOLOR}"
   asdf install $plugin
 done
