@@ -1,13 +1,4 @@
-local M = {}
+local map = vim.keymap.set
 
-M.general = {
-  n = {
-    [";"] = { ":", "command mode", opts = { nowait = true } },
-  },
-
-  i = {
-    ["kj"] = { "<ESC>", "escape vim" },
-  },
-}
-
-return M
+map("n", ";", ":", { desc = "CMD enter command mode" })
+map("i", "kj", "<ESC>", { desc = "Return to normal mode" })
