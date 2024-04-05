@@ -6,8 +6,6 @@ return {
       require "configs.conform"
     end,
   },
-
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -15,7 +13,6 @@ return {
       require "configs.lspconfig"
     end,
   },
-  --
   {
     "williamboman/mason.nvim",
     opts = {
@@ -26,7 +23,6 @@ return {
       },
     },
   },
-  --
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
