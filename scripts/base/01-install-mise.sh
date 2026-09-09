@@ -10,6 +10,8 @@ command_exists() {
 setup_mise() {
   curl https://mise.run | sh
 
+  export PATH="$HOME/.local/bin:$PATH"
+
   if ! command_exists asdf; then
     echo "mise not found!"
     exit 127
