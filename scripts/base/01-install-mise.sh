@@ -12,7 +12,7 @@ setup_mise() {
 
   export PATH="$HOME/.local/bin:$PATH"
 
-  if ! command_exists asdf; then
+  if ! command_exists mise; then
     echo "mise not found!"
     exit 127
   fi
